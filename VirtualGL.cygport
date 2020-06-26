@@ -2,7 +2,7 @@ inherit cmake
 
 NAME=VirtualGL
 VERSION=2.6.3
-RELEASE=1
+RELEASE=2
 
 CATEGORY=Net
 SUMMARY="A toolkit for displaying OpenGL applications to thin clients"
@@ -30,7 +30,7 @@ vglconnect script.
 Refer to the VirtualGL User's Guide for usage information."
 
 SRC_URI="https://sourceforge.net/projects/virtualgl/files/${VERSION}/VirtualGL-${VERSION}.tar.gz"
-PATCH_URI="virtualgl-dont-build-glxdemos.patch"
+PATCH_URI="virtualgl-glxdemos-tweaks.patch"
 
 src_compile() {
   cd ${B}

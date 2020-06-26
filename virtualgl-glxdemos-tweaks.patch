@@ -1,0 +1,15 @@
+--- a/glxdemos/CMakeLists.txt
++++ b/glxdemos/CMakeLists.txt
+@@ -19,12 +19,8 @@ target_link_libraries(glxinfo ${OPENGL_gl_LIBRARY} ${X11_X11_LIB}
+ if(CMAKE_SYSTEM_NAME STREQUAL "SunOS")
+ 	target_link_libraries(glxinfo Xmu)
+ endif()
+-install(TARGETS glxinfo DESTINATION ${CMAKE_INSTALL_BINDIR})
+ 
+ set(GLXSPHERES glxspheres)
+-if(BITS EQUAL 64)
+-	set(GLXSPHERES glxspheres64)
+-endif()
+ add_executable(${GLXSPHERES} glxspheres.c)
+ target_link_libraries(${GLXSPHERES} ${OPENGL_gl_LIBRARY} ${X11_X11_LIB}
+ 	${OPENGL_glu_LIBRARY} m)
