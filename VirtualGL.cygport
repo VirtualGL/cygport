@@ -13,11 +13,11 @@ regardless of the size of the 3D data being rendered or the speed of the
 network.
 Using the vglrun script on a Linux or Unix server, the VirtualGL Faker library
 is preloaded into an OpenGL application at run time.  The faker then intercepts
-and modifies (\"interposes\") certain GLX, OpenGL, X11, and XCB function calls
-in order to seamlessly redirect 3D rendering from the application's windows
-into corresponding GPU-attached off-screen buffers, read back the rendered
-frames, and transport the frames to the \"2D X Server\" (the X server to which
-the application's GUI is being displayed), where the frames are composited back
+and modifies ('interposes') certain GLX, OpenGL, X11, and XCB function calls in
+order to seamlessly redirect 3D rendering from the application's windows into
+corresponding GPU-attached off-screen buffers, read back the rendered frames,
+and transport the frames to the '2D X Server' (the X server to which the
+application's GUI is being displayed), where the frames are composited back
 into the application's windows.
 VirtualGL can be used to give hardware-accelerated 3D rendering capabilities to
 VNC and other X proxies that either lack OpenGL support or provide it through a
