@@ -1,7 +1,7 @@
 inherit cmake
 
 NAME=VirtualGL
-VERSION=2.6.4
+VERSION=3.0
 RELEASE=1
 
 CATEGORY=Net
