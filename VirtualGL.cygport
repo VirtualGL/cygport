@@ -3,6 +3,7 @@ inherit cmake
 NAME=VirtualGL
 VERSION=3.0
 RELEASE=1
+HOMEPAGE=https://VirtualGL.org
 
 CATEGORY=Net
 SUMMARY="A toolkit for displaying OpenGL applications to thin clients"
